@@ -1,0 +1,8 @@
+/********************************************************************************
+* Defines the styles needed to make Internet Exporer 7 and
+* below display the design correctly
+********************************************************************************/
+table.calendar caption span,ul.horizontal,ul.horizontal li,#site-main-content,#sidebar,#extrainfo,.column{
+	display:inline;
+	zoom:1;
+}
