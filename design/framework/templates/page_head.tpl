@@ -7,7 +7,7 @@
 {foreach $site.meta as $key=>$item}
 {if and(not($pagedata.is_error), array('description', 'keywords')|contains($key))}
 {if and($pagedata.is_content, is_set($current_node.data_map[concat('meta_', $key)]), $current_node.data_map[concat('meta_', $key)].has_content)}
-{set-block variable='item'}{attribute_view_gui attribute=$current_node.data_map[concat('meta_',$key)]}{/set-block}
+{set-block variable='item'}{attribute_view_gui attribute=$current_node.data_map[concat('meta_', $key)]}{/set-block}
 {/if}
 {/if}
 <meta name="{$key|wash()}" content="{$item|wash()|trim()}" />

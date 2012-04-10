@@ -84,7 +84,7 @@
 {/if}
 
 {if $can_manage_location}
-    {if and( $can_manage_location, ne( $current_node.node_id, ezini( 'NodeSettings', 'RootNode','content.ini' ) ), ne( $current_node.node_id, ezini( 'NodeSettings', 'MediaRootNode', 'content.ini' ) ), ne( $current_node.node_id, ezini( 'NodeSettings', 'UserRootNode', 'content.ini' ) ) )}
+    {if and( $can_manage_location, ne( $current_node.node_id, ezini( 'NodeSettings', 'RootNode', 'content.ini' ) ), ne( $current_node.node_id, ezini( 'NodeSettings', 'MediaRootNode', 'content.ini' ) ), ne( $current_node.node_id, ezini( 'NodeSettings', 'UserRootNode', 'content.ini' ) ) )}
         <input class="ezwt-input-image" type="image" src={"websitetoolbar/ezwt-icon-locations.png"|ezimage} name="AddAssignmentButton" title="{'Add locations'|i18n( 'design/standard/parts/website_toolbar' )}" />
     {else}
         <input class="ezwt-input-image disabled" type="image" src={"websitetoolbar/ezwt-icon-locations-disabled.png"|ezimage} name="AddAssignmentButton" title="{'Add locations'|i18n( 'design/standard/parts/website_toolbar' )}" disabled="disabled" />

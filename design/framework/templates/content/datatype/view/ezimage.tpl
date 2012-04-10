@@ -59,7 +59,7 @@ Input:
             {set $inline_style = concat( $inline_style, 'margin: ', $margin_size, 'px;' )}
         {/if}
         {if $href}<a href={$href}{if and( is_set( $link_class ), $link_class )} class="{$link_class}"{/if}{if and( is_set( $link_id ), $link_id )} id="{$link_id}"{/if}{if $target} target="{$target}"{/if}>{/if}
-        <img{if $css_class} class="{$css_class|wash}"{/if} src={$image.url|ezroot} width="{$image.width}" height="{$image.height}" {if $hspace}hspace="{$hspace}"{/if} style="{$inline_style}" alt="{$alt_text|wash(xhtml)}"{if ne($title,'')} title="{$title|wash()}"{/if} />
+        <img{if $css_class} class="{$css_class|wash}"{/if} src={$image.url|ezroot} width="{$image.width}" height="{$image.height}" {if $hspace}hspace="{$hspace}"{/if} style="{$inline_style}" alt="{$alt_text|wash(xhtml)}"{if ne($title, '')} title="{$title|wash()}"{/if} />
         {if $href}</a>{/if}
     {/if}
 

@@ -25,7 +25,7 @@
 <nav class="pagenavigator">
 	{if gt($current_page, $max.left)}
 		{set $pages=$pages|append(hash(
-				'text', 1, 
+				'text', 1,
 				'link', concat($page_uri, $view_parameter_text, $uri_suffix)|sitelink('no'),
 				'current', false()
 			))}

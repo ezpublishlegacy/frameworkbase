@@ -1,5 +1,5 @@
 {template_merge(hash(
-	'element', cond(and($object_parameters.align, ne($object_parameters.align,'center')), 'aside', 'div'),
+	'element', cond(and($object_parameters.align, ne($object_parameters.align, 'center')), 'aside', 'div'),
 	'alignment', $object_parameters.align,
 	'show_image', and(cond(is_set($hide_image), not($hide_image), true()), cond(is_set($object.data_map.image), $object.data_map.image.has_content, false()))
 ))}

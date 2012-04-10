@@ -1,5 +1,5 @@
 {* Content Box - Custom Tag *}
-{def $has_header=and(is_set($header), ne($header,''))
+{def $has_header=and(is_set($header), ne($header, ''))
 	 $element=cond($has_header, 'section', 'div')
 }
 <{$element} class="module {first_set($display_type, 'customtag')}{if first_set($class, false())} {$class|implode(' ')}{/if}">

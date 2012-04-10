@@ -15,7 +15,7 @@
 <nav id="path">
 {menubar(hash(
 	'orientation', 'horizontal',
-	'delimiter', first_set($delimiter,'/'),
+	'delimiter', first_set($delimiter, '/'),
 	'items', $menu
 ))}
 </nav>
