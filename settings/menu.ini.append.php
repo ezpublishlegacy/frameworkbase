@@ -29,9 +29,28 @@ LeftIdentifierList[]=link
 LeftIdentifierList[]=blog
 LeftIdentifierList[]=frontpage
 
+UtilityIdentifierList[]
+UtilityIdentifierList[]=folder
+UtilityIdentifierList[]=feedback_form
+UtilityIdentifierList[]=gallery
+UtilityIdentifierList[]=forum
+UtilityIdentifierList[]=documentation_page
+UtilityIdentifierList[]=forums
+UtilityIdentifierList[]=event_calendar
+UtilityIdentifierList[]=multicalendar
+UtilityIdentifierList[]=link
+UtilityIdentifierList[]=blog
+UtilityIdentifierList[]=frontpage
+
 # Classes to use in extra menu (infobox)
 ExtraIdentifierList[]
 ExtraIdentifierList[]=infobox
+
+[MenuSettings]
+SideMenuPosition=left
+HideSideMenuClassList[]
+HideSideMenuClassList[]=frontpage
+HideSideMenuClassList[]=survey
 
 [NavigationPart]
 Part[ezcontentnavigationpart]=Content Structure

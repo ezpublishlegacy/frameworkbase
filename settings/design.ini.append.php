@@ -3,4 +3,24 @@
 [ExtensionSettings]
 DesignExtensions[]=frameworkbase
 
+[StylesheetSettings]
+DefaultCSS[]
+DefaultCSS[]=reset.css
+DefaultCSS[]=core.css
+DefaultCSS[]=pagecore.css
+DefaultCSS[]=html5.css
+DefaultCSS[]=content.css
+UserCSS[]
+UserCSS[debug]=debug.css
+UserCSS[toolbar]=websitetoolbar.css
+UserCSS[edit]=edit.css
+FrontendCSSFileList[]=jquery.tools.css
+
+[JavaScriptSettings]
+LibraryScripts[]
+LibraryScripts[]=ezjsc::jquery
+LibraryScripts[]=jquery.tools.min.js
+JavaScriptList[]=jquery.placeholder.js
+CufonYUI=
+
 */ ?>

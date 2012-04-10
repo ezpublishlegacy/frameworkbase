@@ -9,8 +9,20 @@ StorageDirPermissions=0777
 StorageFilePermissions=0777
 LogFilePermissions=0777
 
+[GoogleSettings]
+TrackingCode=
+
 [SearchSettings]
 DelayedIndexing=enabled
+
+[SiteSettings]
+MetaDataArray[]
+MetaDataArray[keywords]=
+MetaDataArray[description]=
+AllowedMetaNames[]
+AllowedMetaNames[]=keywords
+AllowedMetaNames[]=description
+LaunchYear=
 
 [TemplateSettings]
 ShowUsedTemplates=enabled
