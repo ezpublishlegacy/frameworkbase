@@ -5,3 +5,10 @@
 = Description
 --------------------------------------------------------------------------------------------
 Framework Base provides the initial settings and files needed when beginning a framework based website.
+
+= Dependencies
+--------------------------------------------------------------------------------------------
+- frameworkutilities
+- frameworkoperators
+- menubar
+- sitelink
