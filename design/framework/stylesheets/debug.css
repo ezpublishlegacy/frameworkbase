@@ -1,0 +1,186 @@
+/********************************************************************************
+* Defines the debug styles
+*
+* Table of Contents
+	general
+	eZSetup stuff
+	used templates statistics
+	heading colors for misc notices/warnings...
+********************************************************************************/
+
+
+/********************************************************************************
+  general
+********************************************************************************/
+p.comment{/* Class to be used during development for quick comments that someone should notice easily */
+	background-color:#ffff00;
+	border:2px dashed;
+	display:block; /* Set this attribute to "none" to hide the comments */
+	font-weight:bold;
+	margin:4px;
+	padding:4px;
+}
+pre.debugtransaction{
+	background-color:#f8f6d8;
+}
+td.debugheader{
+	background-color:#eeeeee;
+	border-bottom:1px solid #444488;
+	border-top:1px solid #444488;
+	font-family:Arial,Helvetica,sans-serif;
+}
+
+
+/********************************************************************************
+  eZSetup stuff
+********************************************************************************/
+.ezsetup_critical{
+	background-color:#eeeeee;
+	border-bottom:1px solid #444488;
+	border-top:1px solid #444488;
+	color:#ff0000;
+	font-family:Arial,Helvetica,sans-serif;
+	font-weight:bold;
+}
+.ezsetup_uncritical{
+	background-color:#eeeeee;
+	border-bottom:1px solid #444488;
+	border-top:1px solid #444488;
+	color:#e2a31d;
+	font-family:Arial,Helvetica,sans-serif;
+}
+.ezsetup_pass{
+	background-color:#eeeeee;
+	border-bottom:1px solid #444488;
+	border-top:1px solid #444488;
+	color:#00b500;
+	font-family:Arial,Helvetica,sans-serif;
+}
+td.ezsetup_header{
+	background-color:#eeeeee;
+	border-bottom:1px solid #444488;
+	border-top:1px solid #444488;
+	font-family:Arial,Helvetica,sans-serif;
+}
+td.ezsetup_req{
+	font-family:Arial,Helvetica,sans-serif;
+}
+
+
+/********************************************************************************
+  used templates statistics
+********************************************************************************/
+#clearcache{
+	margin-bottom:8px;
+}
+#debug{
+	background-color:#ffffff;
+	border-top:1px dashed black;
+	clear:both;
+	color:#000000;
+	font-size:12px;
+	margin:10px auto;
+	padding:5px;
+	position:relative;
+	text-align:left;
+	width:1000px;
+}
+#debug a{
+	color:#0000ff !important;
+}
+#debug h2{
+	font-size:22px;
+	margin:6px 0;
+}
+#debug h3{
+	font-size:16px;
+	margin:6px 0;
+}
+#debug .debug-toolbar h3{
+	font-size:13px;
+}
+#debug label{
+	display:block;
+}
+div#debug pre{
+	margin:4px 0;
+	white-space:pre-wrap;
+}
+#debug span.debuginfo:after{/* style info tags (that have more info when hovering) */
+	border:2px solid #23a4f5;
+	border-radius:10px;
+	color:#23a4f5;
+	content:"i";
+	font-size:10px;
+	height:10px;
+	line-height:10px;
+	margin-left:5px;
+	padding:0 5px;
+	opacity:0.6;
+	width:10px;
+}
+#debug span.debuginfo:hover:after{
+	opacity:1;
+}
+#debug table{
+	border-collapse:collapse;
+	width:100%;
+}
+#debug table.debug_resource_usage,#timingpoints,#timeaccumulators{
+	border:1px dashed #000000;
+}
+#debug table td,#debug table th{
+	padding:4px 2px;
+}
+#debug table tr.group td{
+
+	padding-top:11px;
+}
+#debug table tr.group td:first-child{
+
+	padding-left:3px;
+}
+#debug table tr.data td{
+	background-color:#ffffff;
+	border-bottom:1px solid #444488;
+	border-top:1px solid #444488;
+	font-family:Arial,Helvetica,sans-serif;
+
+}
+#debug table tr.data:nth-child(odd) td{
+	background-color:#eeeeee;
+}
+#debug table.debug_resource_usage th+th,#debug table.debug_resource_usage td+td,table#timeaccumulators th+th,table#timeaccumulators td+td,table#timingpoints th+th,table#timingpoints td+td{
+	padding:4px 8px;
+}
+#debug table+h2,#debug table+h3{
+	margin-top:16px;
+}
+#debug th{
+	text-align:left;
+}
+
+/********************************************************************************
+  heading colors for misc notices/warnings...
+********************************************************************************/
+#debug tr.notice td.debugheader span{
+	color:#008000;
+}
+#debug tr.warning td.debugheader span{
+	color:#ffa500;
+}
+#debug tr.error td.debugheader span{
+	color:#ff0000;
+}
+#debug tr.debug td.debugheader span{
+	color:#a52a2a;
+}
+#debug tr.timing td.debugheader span{
+	color:#0000ff;
+}
+#debug tr.strict td.debugheader span{
+	color:#800080;
+}
+#templateusage tr.data td:first-child,#templateusage tr.data td:nth-child(n+5){/* center 1st and two last columns of template usage output */
+	text-align:center;
+}
