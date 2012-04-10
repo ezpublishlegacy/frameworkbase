@@ -14,6 +14,7 @@ TrackingCode=
 
 [SearchSettings]
 DelayedIndexing=enabled
+DisplayFacets=enabled
 
 [SiteSettings]
 MetaDataArray[]
