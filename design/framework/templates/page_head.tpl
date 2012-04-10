@@ -19,3 +19,5 @@
 {if $pagedata.is_content}<link rel="canonical" href={$current_node.object.main_node|sitelink(, true())} />{/if}
 
 {if first_set($enable_link, true())}{include uri="design:link.tpl" enable_help=first_set($enable_help, true()) enable_link=first_set($enable_link, true())}{/if}
+<link rel="Shortcut Icon" href={'images/favicon.png'|ezdesign()} type="image/x-icon" />
+<link rel="apple-touch-icon" href={'images/favicon-iphone.png'|ezdesign()}  type="image/x-icon" />
