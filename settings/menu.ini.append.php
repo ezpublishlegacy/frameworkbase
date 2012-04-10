@@ -33,4 +33,10 @@ LeftIdentifierList[]=frontpage
 ExtraIdentifierList[]
 ExtraIdentifierList[]=infobox
 
+[NavigationPart]
+Part[ezcontentnavigationpart]=Content Structure
+Part[ezmedianavigationpart]=Media Library
+Part[ezusernavigationpart]=User Accounts
+Part[ezmynavigationpart]=My Account
+
 */ ?>
