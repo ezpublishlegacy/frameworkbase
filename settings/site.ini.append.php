@@ -9,6 +9,9 @@ StorageDirPermissions=0777
 StorageFilePermissions=0777
 LogFilePermissions=0777
 
+[SearchSettings]
+DelayedIndexing=enabled
+
 [TemplateSettings]
 ShowUsedTemplates=enabled
 
