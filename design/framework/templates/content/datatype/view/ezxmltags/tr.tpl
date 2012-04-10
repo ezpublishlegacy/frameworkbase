@@ -1,0 +1,1 @@
+<tr class="{if mod($row_count, 2)}bgdark{else}bglight{/if}">{$content}</tr>
