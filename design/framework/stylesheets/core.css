@@ -1,0 +1,279 @@
+/********************************************************************************
+* Based on Firefox 3.6.20 html.css
+* Use after reset stylesheet
+* Defines the base/core styles for the website
+*
+* Table of Contents
+	blocks
+	tables
+	inlines
+	titles
+	lists
+		nested lists have no top/bottom margins
+		2 deep unordered lists use a circle
+		3 deep (or more) unordered lists use a square
+	leafs
+		focusable content:anything w/ tabindex >=0 is focusable
+********************************************************************************/
+
+
+/********************************************************************************
+  blocks
+********************************************************************************/
+body{
+	margin:8px;
+}
+p,dl{
+	margin:1em 0;
+}
+dd{
+	margin:40px;
+}
+blockquote{
+	margin:1em 40px;
+}
+address{
+	font-style:italic;
+}
+blockquote[type=cite]{
+	border:1px solid #0000ff;
+	margin:1em 0px;
+	padding:1em;
+}
+h1{
+	font-size:32px;
+	font-weight:bold;
+	margin:0.67em 0;
+}
+h2{
+	font-size:24px;
+	font-weight:bold;
+	margin:0.83em 0;
+}
+h3{
+	font-size:19px;
+	font-weight:bold;
+	margin:1em 0;
+}
+h4{
+	font-weight:bold;
+	margin:1.33em 0;
+}
+h5{
+	font-size:13px;
+	font-weight:bold;
+	margin:1.67em 0;
+}
+h6{
+	font-size:11px;
+	font-weight:bold;
+	margin:2.33em 0;
+}
+listing{
+	font-family:sans-serif;
+	font-size:16px;
+	white-space:pre;
+	margin:1em 0;
+}
+pre{
+	font-family:sans-serif;
+	white-space:pre;
+	margin:1em 0;
+}
+
+
+/********************************************************************************
+  tables
+********************************************************************************/
+table{
+	border-spacing:2px;
+	border-collapse:separate;
+	margin-top:0;
+	margin-bottom:0;
+	text-indent:0;
+}
+table[align="left"]{
+	float:left;
+}
+table[align="right"]{
+	float:right;
+}
+table[rules]:not([rules="none"]){
+	border-collapse:collapse;
+}
+caption{
+	text-align:center;	/* caption inherits from table not table-outer */
+}
+table[align="center"] > caption{
+	margin-left:auto;
+	margin-right:auto;
+}
+table[align="center"] > caption[align="left"]{
+	margin-right:0;
+}
+table[align="center"] > caption[align="right"]{
+	margin-left:0;
+}
+tr{
+	vertical-align:inherit;
+}
+tbody{
+	vertical-align:middle;
+}
+thead{
+	vertical-align:middle;
+}
+tfoot{
+	vertical-align:middle;
+}
+table > tr{
+	vertical-align:middle;	/* for XHTML tables without tbody */
+}
+td{ 
+	vertical-align:inherit;
+	text-align:inherit; 
+	padding:1px;
+}
+th{
+	vertical-align:inherit;
+	font-weight:bold;
+	padding:1px;
+}
+
+
+/********************************************************************************
+  inlines
+********************************************************************************/
+q:before{
+	content:open-quote;
+}
+q:after{
+	content:close-quote;
+}
+b,strong{
+	font-weight:bolder;
+}
+i,cite,em,var,dfn{
+	font-style:italic;
+}
+tt,code,kbd,samp{
+	font-family:sans-serif;
+}
+ins{
+	text-decoration:underline;
+}
+s,del{
+	text-decoration:line-through;
+}
+small{
+	font-size:smaller;
+}
+sub{
+	vertical-align:sub;
+	font-size:smaller;
+	line-height:normal;
+}
+sup{
+	vertical-align:super;
+	font-size:smaller;
+	line-height:normal;
+}
+
+
+/********************************************************************************
+  titles
+********************************************************************************/
+abbr[title],acronym[title]{
+	border-bottom:dotted 1px;
+}
+
+
+/********************************************************************************
+  lists
+********************************************************************************/
+ul,menu,dir{
+	list-style-type:disc;
+	margin:1em 0;
+	padding:0 40px;
+}
+ol{
+	list-style-type:decimal;
+	margin:1em 0;
+	padding:0 40px;
+}
+/*====== nested lists have no top/bottom margins ======*/
+ul ul, ul ol, ul dir, ul menu, ul dl,
+ol ul, ol ol, ol dir, ol menu, ol dl,
+dir ul,dir ol,dir dir,dir menu,dir dl,
+menu ul,menu ol,menu dir,menu menu,menu dl,
+dl ul, dl ol, dl dir, dl menu, dl dl{
+	margin-top:0;
+	margin-bottom:0;
+}
+
+/*====== 2 deep unordered lists use a circle ======*/
+ol ul, ul ul, menu ul, dir ul,
+ol menu,ul menu,menu menu,dir menu,
+ol dir,ul dir,menu dir,dir dir{
+	list-style-type:circle;
+}
+
+/*====== 3 deep (or more) unordered lists use a square ======*/
+ol ol ul,	 ol ul ul,	 ol menu ul,	 ol dir ul,
+ol ol menu, ol ul menu, ol menu menu, ol dir menu,
+ol ol dir,	ol ul dir,	ol menu dir,	ol dir dir,
+ul ol ul,	 ul ul ul,	 ul menu ul,	 ul dir ul,
+ul ol menu, ul ul menu, ul menu menu, ul dir menu,
+ul ol dir,	ul ul dir,	ul menu dir,	ul dir dir,
+menu ol ul, menu ul ul, menu menu ul, menu dir ul,
+menu ol menu,menu ul menu,menu menu menu,menu dir menu,
+menu ol dir,menu ul dir,menu menu dir,menu dir dir,
+dir ol ul,	dir ul ul,	dir menu ul,	dir dir ul,
+dir ol menu,dir ul menu,dir menu menu,dir dir menu,
+dir ol dir, dir ul dir, dir menu dir, dir dir dir{
+	list-style-type:square;
+}
+
+
+/********************************************************************************
+  leafs
+********************************************************************************/
+hr{
+	height:2px;
+	border:1px inset;
+	margin:0.5em auto;
+	color:#808080;
+}
+hr[size="1"]{
+	border-style:solid none none none;
+}
+img[usemap],object[usemap]{
+	color:#0000ff;
+}
+frameset{
+	overflow:hidden;
+	position:static !important;
+	float:none !important;
+	border:none !important;
+}
+frame{
+	border:none !important;
+}
+iframe{
+	border:2px inset;
+}
+
+/*====== focusable content:anything w/ tabindex >=0 is focusable ======*/
+abbr:focus,acronym:focus,address:focus,b:focus,
+base:focus,blockquote:focus,br:focus,canvas:focus,caption:focus,
+cite:focus,code:focus,col:focus,colgroup:focus,dd:focus,
+del:focus,dfn:focus,dir:focus,div:focus,dl:focus,dt:focus,em:focus,
+fieldset:focus,form:focus,h1:focus,h2:focus,h3:focus,h4:focus,
+h5:focus,h6:focus,hr:focus,i:focus,img:focus,ins:focus,
+kbd:focus,label:focus,legend:focus,li:focus,link:focus,menu:focus,
+ol:focus,p:focus,pre:focus,q:focus,s:focus,samp:focus,
+small:focus,span:focus,strong:focus,sub:focus,sup:focus,
+table:focus,tbody:focus,td:focus,tfoot:focus,th:focus,thead:focus,
+tr:focus,tt:focus,ul:focus,var:focus{
+	 outline:1px dotted;	/* Don't specify the outline-color, we should always use initial value. */
+}

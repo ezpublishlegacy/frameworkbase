@@ -1,0 +1,373 @@
+/********************************************************************************
+* Defines the general content styles for the website
+*
+* Table of Contents
+	general
+		full view
+	alignment
+		object
+		text
+	columns/modules
+	infoboxes/customtags
+	tables
+		calendar
+		cols
+		comparison
+		list
+		renderedtable
+	images
+	blog post
+********************************************************************************/
+
+
+/********************************************************************************
+  general
+********************************************************************************/
+.attribute-image img,.content-view-embed img{
+	vertical-align:middle;
+}
+.spamfilter{
+	display:none;
+}
+.separator{
+	clear:both;
+	padding:10px 0;
+}
+
+/*====== full view ======*/
+.content-view-full section{
+	clear:none;
+}
+.content-view-full header h1{
+	margin-top:0;
+}
+.content-view-full .content-view-line h2{
+	margin-bottom:4px;
+}
+.content-view-full .content-view-line p{
+	margin-top:0;
+}
+
+/*====== line view ======*/
+.content-view-line{
+	clear:both;
+	text-align:left;
+}
+
+
+/********************************************************************************
+  alignment
+********************************************************************************/
+
+/*====== object ======*/
+.align-center{
+	margin:0 auto;
+	text-align:center;
+}
+.align-left{
+	clear:left;
+	float:left;
+	margin-right:6px;
+}
+.align-right{
+	clear:right;
+	float:right;
+	margin-left:6px;
+}
+
+/*====== text ======*/
+.text-align-left{
+	text-align:left;
+}
+.text-align-center{
+	text-align:center;
+}
+.text-align-right{
+	text-align:right;
+}
+
+
+/********************************************************************************
+  columns/modules
+********************************************************************************/
+.column{
+	display:inline-block;
+	vertical-align:top;
+}
+.module{
+	background-color:#ffffff;
+	border-radius:3px;
+	border:1px solid #808080;
+	clear:both;
+}
+
+
+/********************************************************************************
+  infoboxes/customtags
+********************************************************************************/
+.infobox,.customtag{
+	margin-bottom:12px;
+	padding:6px;
+}
+.infobox header,.customtag header{
+	border-bottom:1px solid #999999;
+	min-height:28px;
+	position:relative;
+}
+.infobox header h1,.customtag header h1,.infobox header h2,.customtag header h2,.infobox header h3,.customtag header h3{
+	color:#808080;
+	font-size:14px;
+	line-height:14px;
+	margin:0 0 4px;
+}
+.infobox header h1,.customtag header h1{
+	position:absolute;
+	top:6px;
+}
+.infobox header a,.customtag header a{
+	color:#808080;
+	position:absolute;
+	right:0;
+	text-decoration:none;
+	top:0;
+}
+.infobox-content,.customtag-content{
+	padding:6px;
+}
+.infobox-content h2,.customtag-content h2{
+	font-size:16px;
+	margin:0;
+}
+.infobox-content p,.customtag-content p{
+	margin-top:0;
+}
+
+
+/********************************************************************************
+  tables
+********************************************************************************/
+table{
+	font-size:100%;
+	margin:0;
+	padding:0;
+}
+th,td{
+	padding:0;
+}
+th.tight,td.tight{
+	width:1%;
+}
+td.nowrap{
+	white-space:nowrap;
+}
+td.number{
+	text-align:right;
+}
+table.default th,table.default td{
+	padding:2px;
+}
+
+/*====== calendar ======*/
+table.calendar caption{
+	font-weight:bold;
+	padding:2px 0;
+}
+table.calendar caption a{
+	font-size:19px;
+}
+table.calendar caption span{
+	display:inline-block;
+	vertical-align:middle;
+	width:75%;
+}
+table.calendar td{
+	text-align:center;
+}
+table.calendar td.current{
+	background-color:#e0e0e0;
+	color:#d02020;
+	font-weight:bold;
+}
+table.calendar td.selected{
+	background-color:#ffffaa;
+}
+
+/*====== cols ======*/
+table.cols{
+	border:none;
+	margin:16px 0;
+	width:100%;
+}
+table.cols th,table.cols td{
+	border-right:1px solid #ffffff;
+	border-bottom:1px solid #ffffff;
+	padding:8px;
+	vertical-align:top;
+}
+table.cols th{
+	background-color:#dfdfdf;
+	color:#525345;
+	font-weight:bold;
+	text-align:left;
+	white-space:nowrap;
+}
+table.cols td{
+	font-weight:normal;
+}
+table.cols th:first-child,table.cols td:first-child{
+	border-left:1px solid #ffffff;
+}
+table.cols col.bglight,div.bglight,table.cols tr.bglight:hover td,table.cols tr.bgdark:hover td{
+	background-color:#f1f1ed;
+}
+table.cols col.bgdark,div.bgdark,table.cols tr.bglight:hover,table.cols tr.bgdark:hover{
+	background-color:#eae9e1;
+}
+table.cols a{
+	border-bottom-color:#eae9e1;
+}
+
+/*====== comparison ======*/
+table.comparison{
+	border:none;
+	margin:16px 0;
+	width:100%;
+}
+table.comparison th,table.comparison td{
+	border-right:1px solid #ffffff;
+	border-bottom:1px solid #ffffff;
+	padding:8px;
+	vertical-align:top;
+}
+table.comparison th{
+	background-color:#dfdfdf;
+	color:#525345;
+	font-weight:bold;
+	text-align:left;
+	white-space:nowrap;
+}
+table.comparison td{
+	font-weight:normal;
+}
+table.comparison th:first-child,table.comparison td:first-child{
+	border-left:1px solid #ffffff;
+}
+table.comparison col.bglight,div.bglight,table.comparison tr.bglight:hover,table.comparison tr.bgdark:hover{
+	background-color:#f1f1ed;
+}
+table.comparison col.bgdark,div.bgdark{
+	background-color:#dfdfdf;
+	color:#525345;
+	text-align:left;
+}
+table.comparison tr.bglight:hover td,table.comparison tr.bgdark:hover td{
+	background-color:#eae9e1;
+}
+table.comparison a{
+	border-bottom-color:#eae9e1;
+}
+
+/*====== list ======*/
+table.list{
+	border:none;
+	margin:16px 0;
+	width:100%;
+}
+table.list th,table.list td{
+	border-right:1px solid #ffffff;
+	border-bottom:none;
+	padding:8px;
+	vertical-align:top;
+}
+table.list th{
+	background-color:#dfdfdf;
+	color:#525345;
+	font-weight:bold;
+	text-align:left;
+	white-space:nowrap;
+}
+table.list td{
+	border-top:1px solid #f8f8f8;
+	font-weight:normal;
+}
+table.list th:first-child,table.list td:first-child{
+	border-left:1px solid #ffffff;
+}
+table.list tr.bglight{
+	background-color:#f1f1ed;
+}
+table.list tr.bgdark{
+	background-color:#eae9e1;
+}
+table.list tr.bglight:hover,table.list tr.bgdark:hover{
+	background-color:#ffffff;
+}
+table.list tr.bglight:hover td,table.list tr.bgdark:hover td{
+	border-color:#ffffff;
+}
+table.list a{
+	border-bottom-color:#eae9e1;
+}
+table.list img{
+	vertical-align:middle;
+}
+
+/*====== renderedtable ======*/
+table.renderedtable{
+	border:none;
+	margin:16px 0;
+	width:100%;
+}
+table.renderedtable th,table.renderedtable td{
+	border-right:1px solid #ffffff;
+	border-bottom:1px solid #ffffff;
+	padding:8px;
+	vertical-align:top;
+}
+table.renderedtable th{
+	background-color:#dfdfdf;
+	color:#525345;
+	font-weight:bold;
+	text-align:left;
+	white-space:nowrap;
+}
+table.renderedtable th:first-child,table.renderedtable td:first-child{
+	border-left:1px solid #ffffff;
+}
+table.renderedtable tr.bglight,div.bglight,table.renderedtable tr.bglight:hover td,table.renderedtable tr.bgdark:hover td{
+	background-color:#f1f1ed;
+}
+table.renderedtable tr.bgdark,div.bgdark,table.renderedtable tr.bglight:hover,table.renderedtable tr.bgdark:hover{
+	background-color:#eae9e1;
+}
+table.renderedtable a{
+	border-bottom-color:#eae9e1;
+}
+
+
+/********************************************************************************
+  images
+********************************************************************************/
+.content-view-embed.class-image{
+	margin-bottom:12px;
+}
+.content-view-line .attribute-image,.content-view-listitem .attribute-image,.content-view-embed:not(.class-image) .attribute-image{
+	float:left;
+	margin-right:10px;
+}
+
+
+/********************************************************************************
+  blog post
+********************************************************************************/
+.content-view-full.class-blog-post{
+	position:relative;
+}
+.content-view-full.class-blog-post .attribute-image{
+	position:absolute;
+	right:20px;
+	top:20px;
+}
+.content-view-line.class-blog-post .attribute-byline{
+	margin:2px 0 6px;
+}
