@@ -14,6 +14,9 @@ ClassFilter[]=footer
 ClassFilter[]=image
 ClassFilter[]=infobox
 
+[literal]
+AvailableClasses[]=html
+
 [ul]
 AvailableClasses[]
 AvailableClasses[]=menu vertical
