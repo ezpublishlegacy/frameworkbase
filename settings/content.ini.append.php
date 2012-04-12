@@ -1,5 +1,8 @@
 <?php /* #?ini charset="utf-8"?
 
+[CustomTagSettings]
+AvailableCustomTags[]=column
+
 [SiteMapSettings]
 Limit=10
 Columns=3
