@@ -1,0 +1,1 @@
+{include uri="design:node/view/infobox.tpl"}
