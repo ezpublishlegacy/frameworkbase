@@ -2,6 +2,7 @@
 
 [CustomTagSettings]
 AvailableCustomTags[]=column
+AvailableCustomTags[]=contentbox
 
 [SiteMapSettings]
 Limit=10
@@ -16,6 +17,9 @@ ClassFilter[]=banner
 ClassFilter[]=footer
 ClassFilter[]=image
 ClassFilter[]=infobox
+
+[contentbox]
+CustomAttributes[]=header
 
 [literal]
 AvailableClasses[]=html
