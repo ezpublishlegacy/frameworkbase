@@ -9,16 +9,18 @@
 		'fetch_parameters', hash(
 			'AttributeFilter', array(array('priority', 'between', array(100, 110)))
 		),
-		'append', hash(
-			'condition', array('result', $current_user.is_logged_in),
-			'conditional', array(
-				hash(
-					'content', 'User Login',
-					'link', '/user/login',
-				),
-				hash(
-					'content', 'Logout',
-					'link', '/user/logout',
+		'append', array(
+			hash(
+				'condition', array('result', $current_user.is_logged_in),
+				'conditional', array(
+					hash(
+						'content', 'User Login',
+						'link', '/user/login',
+					),
+					hash(
+						'content', 'Logout',
+						'link', '/user/logout',
+					)
 				)
 			)
 		)
