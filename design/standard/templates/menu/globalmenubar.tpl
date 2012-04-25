@@ -1,5 +1,6 @@
 <nav id="global-menubar">
 {menubar(hash(
+	'menubar_id', 'primary',
 	'orientation', 'horizontal',
 	'class', 'primary',
 	'include_root_node', true(),
