@@ -3,6 +3,9 @@
 [blank]
 PageLayout=blank_pagelayout.tpl
 
+[ajax]
+PageLayout=ajax_pagelayout.tpl
+
 [FullWidthSettings]
 AllowFullWidth=enabled
 ClassList[]
