@@ -3,11 +3,10 @@
 class SiteLinkHandler
 {
 
-	static function process($menuitem){
-		$OperatorValue = $menuitem->getNode();
+	static function process($object){
 		$Parameters = array('parameters'=>array('quotes'=>false));
-		SiteLinkOperator::sitelink($OperatorValue, $Parameters);
-		return $OperatorValue;
+		SiteLinkOperator::sitelink($object, $Parameters);
+		return $object;
 	}
 
 }
