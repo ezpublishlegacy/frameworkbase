@@ -6,9 +6,10 @@
 	menu core
 		horizontal
 		vertical
+		dynamic
 		primary
 		utility
-		special items
+		menu display
 	navigation
 	header
 	banners
@@ -83,8 +84,6 @@
 	vertical-align:middle;
 }
 .menu .menu{
-	background-color:#ffffff;
-	display:none;
 	text-align:left;
 }
 
@@ -97,15 +96,12 @@ ul.horizontal{
 ul.horizontal li{
 	display:inline-block;
 	position:relative;
+	vertical-align:top;
 	white-space:nowrap;
 }
 ul.horizontal a,ul.horizontal .inactive{
 	margin-right:4px;
 	padding:0 6px 2px
-}
-ul.horizontal .menu{
-	position:absolute;
-	z-index: 10000;
 }
 ul.horizontal.delimiter a{
 	display:inline-block;
@@ -122,10 +118,17 @@ ul.vertical li{
 }
 ul.vertical .menu{
 	position:absolute;
-	z-index: 10000;
+	z-index:10000;
 }
 ul.vertical > li.delimiter{
 	border-bottom:1px solid #000000;
+}
+
+/*====== dynamic ======*/
+.dynamic .menu{
+	display:none;
+	position:absolute;
+	z-index:10000;
 }
 
 /*====== primary ======*/
@@ -143,22 +146,11 @@ ul.vertical > li.delimiter{
 	line-height:1;
 }
 
-/*====== special items ======*/
-.menu .menu-root a{
-	background-color:#cccccc;
-}
-.menu .current > a{
-	background-color:#0000ff;
-	color:#cccccc;
-}
-.menu .current-parent > a{
-	background-color:#c0c0c0;
-	color:#000000;
-}
+/*====== menu display ======*/
 .menu-display{
 	display:none;
 	position:absolute;
-	z-index: 10000;
+	z-index:10000;
 }
 
 
@@ -169,27 +161,6 @@ nav h2{
 	font-size:18px;
 	margin:0 0 6px;
 }
-/*
-#global-menubar{
-	font-weight:bold;
-	margin-bottom:10px;
-	text-align:center;
-}
-#global-menubar .menu{
-	margin:0 auto;
-	z-index: 10000;
-}
-#path{
-	font-size:14px;
-	margin-bottom:4px;
-}
-#path a{
-	color:#000000;
-}
-#path span.delimiter{
-	margin:0 4px;
-}
-*/
 
 
 /********************************************************************************
