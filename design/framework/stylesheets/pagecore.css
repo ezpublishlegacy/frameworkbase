@@ -152,6 +152,10 @@ ul.vertical > li.delimiter{
 	position:absolute;
 	z-index:10000;
 }
+.menu-display .menu{
+	display:block;
+	position:static;
+}
 
 
 /********************************************************************************
