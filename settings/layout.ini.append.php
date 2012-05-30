@@ -53,4 +53,7 @@ InfoboxPosition=position
 # The default value for Infobox positioning
 InfoboxDefaultPosition=right
 
+ExcludeClassList[]
+ExcludeClassList[]=frontpage
+
 */ ?>
