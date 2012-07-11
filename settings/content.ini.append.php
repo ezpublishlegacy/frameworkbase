@@ -24,6 +24,9 @@ CustomAttributes[]=header
 [literal]
 AvailableClasses[]=html
 
+[link]
+AvailableClasses[]=html
+
 [ul]
 AvailableClasses[]
 AvailableClasses[]=menu vertical
