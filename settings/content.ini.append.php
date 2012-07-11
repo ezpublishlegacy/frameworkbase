@@ -25,7 +25,7 @@ CustomAttributes[]=header
 AvailableClasses[]=html
 
 [link]
-AvailableClasses[]=html
+AvailableClasses[]=external
 
 [ul]
 AvailableClasses[]
