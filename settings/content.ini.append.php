@@ -3,6 +3,7 @@
 [CustomTagSettings]
 AvailableCustomTags[]=column
 AvailableCustomTags[]=contentbox
+AvailableCustomTags[]=listsubitems
 
 [SiteMapSettings]
 Limit=10
@@ -20,6 +21,14 @@ ClassFilter[]=infobox
 
 [contentbox]
 CustomAttributes[]=header
+
+[listsubitems]
+CustomAttributes[]=page
+CustomAttributes[]=header
+CustomAttributes[]=children_view
+CustomAttributes[]=limit
+CustomAttributes[]=stylize
+CustomAttributes[]=alltext
 
 [literal]
 AvailableClasses[]=html
