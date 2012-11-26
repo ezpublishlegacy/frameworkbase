@@ -17,6 +17,8 @@ UserCSS[edit]=edit.css
 FrontendCSSFileList[]=jquery.tools.css
 
 [JavaScriptSettings]
+LocalScripts[]
+LocalScripts[jquery]=jquery-1.8.2.min.js
 LibraryScripts[]
 LibraryScripts[]=ezjsc::jquery
 LibraryScripts[]=jquery.tools.min.js
