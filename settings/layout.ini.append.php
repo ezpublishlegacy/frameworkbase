@@ -56,4 +56,7 @@ InfoboxDefaultPosition=right
 ExcludeClassList[]
 ExcludeClassList[]=frontpage
 
+# Sorts Infoboxes by Priority
+InfoboxSort=disabled
+
 */ ?>
