@@ -28,6 +28,7 @@ LeftIdentifierList[]=multicalendar
 LeftIdentifierList[]=link
 LeftIdentifierList[]=blog
 LeftIdentifierList[]=frontpage
+LeftIdentifierList[]=faq_list
 
 UtilityIdentifierList[]
 UtilityIdentifierList[]=folder
